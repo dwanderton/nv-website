@@ -14,24 +14,25 @@
     <link rel="icon" href="assets/img/cropped-favicion-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="assets/img/cropped-favicion-180x180.png" />
     <meta name="msapplication-TileImage" content="assets/img/cropped-favicion-270x270.png" />
+    <script src="assets/require.js"></script>
     <title>
-       
-        MIT Innovation in Education Bootcamp &middot; 
-      
+
+        MIT Innovation in Education Bootcamp &middot;
+
     </title>
-      <!-- 
+      <!--
       -- Title: InnoEd-MIT-Guadalajara
       -- Author: David Anderton
       --
       --
       --->
-    
+
       <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
       <link href="assets/css/toolkit-startup.css" rel="stylesheet">
       <link href="assets/css/application-startup.css" rel="stylesheet">
-    
 
-    
+
+
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -57,14 +58,14 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-43112444-21', 'auto');
+    ga('create', 'UA-goes-here', 'auto');
     ga('send', 'pageview');
     </script>
   </head>
 
 
 <body>
-  
+
 
 
 
@@ -149,6 +150,56 @@
           <p class="lead mb-4 text-muted">19-21 July 2017</p>
           <p class="lead mb-4 text-muted">Equipping Educators to invent the future of Educational Institutions</p>
           <!--<button class="btn btn-primary btn-lg">Try it now</button>-->
+          <!-- IDT Image Slider (Aleppoview_beforeandafter) include -->
+
+<div class="news_idt__image-slider news_idt__image-slider--ltr news_idt__image-slider--enabled" id="news_idt__image-slider__Aleppoview_beforeandafter" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+   <h2 class="news_idt__image-slider__cta">
+
+           <span class="news_idt__image-slider__cta-label">Interactive</span>
+           <span class="news_idt__image-slider__cta-text">
+                            </span>
+   </h2>
+
+   <div class="news_idt__image-slider__images-container">
+
+       <h3 class="news_idt__image-slider__label news_idt__image-slider__label--2nd">
+           2016        </h3>
+       <img src="https://news.files.bbci.co.uk/vj/live/idt-images/image-slider-Aleppoview_beforeandafter/restaurantviewafterv1_2883q.jpg" alt="View from the citadel across the devastated city">
+
+       <div class="news_idt__image-slider__1st-img-holder" style="width: 26%;">
+           <h3 class="news_idt__image-slider__label">
+               2008            </h3>
+           <img class="news_idt__image-slider__1st-img" src="https://news.files.bbci.co.uk/vj/live/idt-images/image-slider-Aleppoview_beforeandafter/citadelbeforeview_reu_976v1_c5prd.jpg" alt="View from the Citadel of people eating at restaurants" style="width: 976px;">
+       </div>
+
+       <div class="news_idt__image-slider__controls-holder" style="left: 26%;">
+           <div class="news_idt__image-slider__controls__handle"></div>
+       </div>
+
+   </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="http://static.bbc.co.uk/indepthtoolkit/13.3.0.278/css/image_slider/image_slider.css">
+<script>
+
+    requirejs.config({
+        paths: {
+            IdtImageSlider: 'http://static.bbc.co.uk/indepthtoolkit/13.3.0.278/js/image_slider/compiled/image_slider'
+        }
+    });
+
+    if (document.getElementsByClassName) {
+        require(['IdtImageSlider'], function (ImageSlider) {
+            var imageSliderId = 'news_idt__image-slider__Aleppoview_beforeandafter';
+            var imageSlider = new ImageSlider(imageSliderId);
+            imageSlider.init();
+        });
+    }
+
+</script>
+
+<!-- End IDT Image Slider include -->
         </div>
       </div>
     </div>
@@ -253,7 +304,7 @@
         <img class="mb-1" src="assets/img/headshots/vijay_kumar.png" style="max-width: 100%;">
         <p><strong>Vijay Kumar.</strong> Associate Dean of Digital Learning at MIT.</p>
       </div>
-      
+
       <!--<div class="col-md-4 px-4 mb-5">
         <img class="mb-1" src="assets/img/headshots/Dr_Miguel_Angel_Navarro_Navarro.png" style="max-width: 100%;">
         <p><strong>Miguel Ángel Navarro Navarro.</strong> Vice-Rector at the Universidad de Guadalajara.</p>
@@ -411,7 +462,7 @@
           <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
           <li class="text-muted">
             The MIT Bootcamps give a taste of the "drinking from the firehose" experience at Massachusetts Institute of Technology.<br/><br/>
-            MIT Innovation in Education Bootcamp is Equipping Educators to Invent the Future of Educational Institutions 
+            MIT Innovation in Education Bootcamp is Equipping Educators to Invent the Future of Educational Institutions
           </li>
         </ul>
       </div>
@@ -448,11 +499,10 @@
 
 </div>
 
-
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="IdtImageSlider" src="assets/image_slider.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
   </body>
 </html>
-
