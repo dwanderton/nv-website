@@ -194,15 +194,7 @@
         <button class="btn btn-secondary btn-lg btn-borderless" id="open-popup">
           Sign up to learn more
         </button>
-        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-         <script>
-         function showMailingPopUp() {
-             require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"83ed41fb9df4a540bcb7f07b3","lid":"fed6759fbe"}) })
-             document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-         };
-         document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-         </script>
-
+        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"83ed41fb9df4a540bcb7f07b3","lid":"fed6759fbe"}) })</script>
 
       </div>
       <div class="col-md-5 ml-auto order-1 order-md-2">
