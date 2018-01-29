@@ -174,7 +174,7 @@
         <h3>Equipping Individuals to Inform Response Organizations</h3>
         <p class="lead mb-4">By enhancing the ability of individuals experiencing disasters to share compelling captures of their plight on social media NV generates a rich set of critical data for organizations involved in recovery efforts to make effective, in-the-moment, decisions on resource allocation.</p>
         <p class="lead mb-4">NV was part of the MIT Media Lab, and MIT Sloan School of Management's, <a target="_blank" href="http://politics.media.mit.edu/">Viral Political Action</a> course convened in fall 2017. For a high-level overview of the project read the submitted paper <a href="http://politics.media.mit.edu/Nuestra_Vista.pdf" class="text-primary">here</a>.</p>
-        <button type="button" class="btn btn-primary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal">
+        <button type="button" class="btn btn-primary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal" onclick="ga('send', 'event', 'Button', 'click', 'signup');">
           Sign up to learn more
         </button>
 
@@ -201,7 +201,7 @@
         <h2>Exhaust Data that matters.</h2>
          <p class="lead mb-4 text-muted">As people share compelling captures of their environment we utilize the wide range of exhaust data available informing response organizations effectively. With no additional burden NV detects relevant objects, emotions, descriptors and locations - providing your organization with a rich dataset to make critical resource deployment decisions in a timely manner.</p>
 
-        <button type="button" class="btn btn-secondary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal">
+        <button type="button" class="btn btn-secondary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal" onclick="ga('send', 'event', 'Button', 'click', 'signup');">
           Sign up to learn more
         </button>
       </div>
@@ -241,7 +241,7 @@
         <h6 class="text-muted text-uppercase">Data Mapping In RealTime</h6>
         <h3>Mapping and Visualization Tools</h3>
         <p class="lead mb-4">Filter, examine, and export reports from social sharing on the ground in real time across huge geographic areas. Easily consider and compare thousands of captures and be notified of spikes in sharing - allowing you to effectively triage and organize response.</p>
-        <button type="button" class="btn btn-primary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal">
+        <button type="button" class="btn btn-primary btn-lg btn-borderless" data-toggle="modal" data-target="#signupModal" onclick="ga('send', 'event', 'Button', 'click', 'signup');">
           Sign up to learn more
         </button>
 
@@ -528,7 +528,7 @@
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <form action="https://mit.us17.list-manage.com/subscribe/post?u=83ed41fb9df4a540bcb7f07b3&amp;id=fed6759fbe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form action="https://mit.us17.list-manage.com/subscribe/post?u=83ed41fb9df4a540bcb7f07b3&amp;id=fed6759fbe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate onsubmit="ga('send', 'event', 'Form', 'submit', 'signup');">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Sign up to learn more</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
